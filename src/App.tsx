@@ -4,8 +4,7 @@ import Ball from './components/Ball';
 
 function App() {
   const [numbers, setNumbers] = useState<number[]>([5, 11, 16, 23, 32]);
-
-  const balls = numbers.map((num) => <Ball value={num} />);
+  const balls = numbers.map((num) => <Ball value={num} key={num}/>);
 
   const shuffle = () => {
     const max = 36;
@@ -19,7 +18,7 @@ function App() {
 
     newNumbers.sort((a, b) => a - b);
     newNumbers = [...new Set(newNumbers)];
-    
+
     if (newNumbers.length < 5) {
       shuffle();
     } else {

@@ -28,3 +28,23 @@
   height: 17px;
   background-color: #fff;
 }
+
+.blue {
+  background: linear-gradient(to right, #aedbf4, #3e93ed);
+}
+
+.red {
+  background: linear-gradient(to right, #da4453, #89216b);
+}
+
+.green {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+.yellow {
+  background: linear-gradient(to right, #ffe259, #ffa751);
+}
+
+.black {
+  background: linear-gradient(to right, #646464, #000000);
+}
